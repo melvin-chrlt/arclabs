@@ -22,6 +22,7 @@ main{
 
             h3{
                 font-size: 1.5em;
+                color:#394b5e;
             }
 
             p{
@@ -40,20 +41,27 @@ main{
             display: flex;
 
             img{
-                width: 120%;
+                width: 140%;
                 height: auto;
+                object-fit: cover;
             }
 
             div{
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
-                padding-bottom: 5.5em;
+                padding-bottom: 5.1em;
                 padding-left: 2em;
                 gap: 2em;
 
+                h4{
+                    color: #d8b68f;
+                    font-size: 1.7em;
+                }
+
                 h3{
                     font-size: 4.5em;
+                    color:#394b5e;
 
                     span{
                         display: block;
@@ -62,7 +70,19 @@ main{
 
                 p{
                     font-size: 1.3em;
-                    line-height: 55px;
+                    line-height: 45px;
+                    width: 90%;
+                }
+
+                a{
+                    color:#394b5e;
+                    border: #d8b68f solid 2px;
+                    padding: 1em 2em;
+                    text-align: center;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    transition: ease-in-out all 0.2s;
+                    width: 15%;
                 }
             }
         }
