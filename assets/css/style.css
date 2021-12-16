@@ -1,0 +1,134 @@
+@font-face {
+  font-family: roboto;
+  src: url(../font/Roboto-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2em 5em;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav img {
+  width: 150%;
+  height: auto;
+}
+header nav #navBar {
+  padding-right: 2em;
+}
+header nav #navBar ul {
+  display: flex;
+  gap: 5em;
+}
+header nav #navBar ul li a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  transition: all ease-in-out 0.2s;
+}
+header nav #navBar ul li a:hover {
+  color: #ca9e6c;
+}
+header section {
+  padding-top: 10em;
+  color: white;
+}
+header section h1 {
+  font-size: 10em;
+  margin-bottom: 0.2em;
+}
+header section .btn {
+  color: white;
+  padding: 1em 2em;
+  border: white 2px solid;
+  font-size: 1.2em;
+  transition: ease-in-out all 0.2s;
+}
+header section .btn:hover {
+  color: #ca9e6c;
+  border: #ca9e6c 2px solid;
+}
+header section .social {
+  display: flex;
+  gap: 1em;
+  padding-top: 4em;
+  padding-bottom: 2em;
+  font-size: 1.5em;
+}
+header section .social i {
+  transition: ease-in-out all 0.2s;
+}
+header section .social i:hover {
+  color: #ca9e6c;
+  cursor: pointer;
+}
+
+main #cards {
+  padding: 8em 0;
+  display: flex;
+  justify-content: space-around;
+}
+main #cards article {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2.5em;
+}
+main #cards article img {
+  width: 30%;
+  height: auto;
+  border: 1px black solid;
+  padding: 3em;
+}
+main #cards article h3 {
+  font-size: 1.5em;
+}
+main #cards article p {
+  line-height: 35px;
+  font-size: 1.2em;
+  width: 65%;
+}
+main #about {
+  padding: 10em 4em;
+  background-color: #f7f7f7;
+}
+main #about div {
+  display: flex;
+}
+main #about div img {
+  width: 120%;
+  height: auto;
+}
+main #about div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 5.5em;
+  padding-left: 2em;
+  gap: 2em;
+}
+main #about div div h3 {
+  font-size: 4.5em;
+}
+main #about div div h3 span {
+  display: block;
+}
+main #about div div p {
+  font-size: 1.3em;
+  line-height: 55px;
+}
+
+/*# sourceMappingURL=style.css.map */
