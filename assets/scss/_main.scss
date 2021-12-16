@@ -130,8 +130,8 @@ main{
             width: 95%;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 40em 40em 1fr;
-            grid-gap: 3em;
+            grid-template-rows: 40em 40em 5em;
+            gap: 3em;
             justify-content: center;
             padding: 3em 0;
 
@@ -294,6 +294,26 @@ main{
                 transform: scale(1.025);
                 box-shadow: #394b5e 2px 2px 15px;
             }
+        }
+    }
+
+    #video{
+        width: 100%;
+        background-image: url(../images/ct1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 8em 0;
+
+        p{
+            font-weight: bold;
+            font-size: 3.5em;
+            padding : 7em;
+            color: white;
         }
     }
 }
