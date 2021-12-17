@@ -181,7 +181,7 @@ main #project ul a:hover {
   color: #d8b68f;
 }
 main #project #projectGrid {
-  width: 95%;
+  width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 40em 40em 5em;
@@ -346,6 +346,61 @@ main #video p {
   font-size: 3.5em;
   padding: 7em;
   color: white;
+}
+main #clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5em 0;
+}
+main #clients h4 {
+  color: #d8b68f;
+  font-size: 1.7em;
+}
+main #clients h3 {
+  font-size: 4.5em;
+  color: #394b5e;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+main #clients div {
+  display: flex;
+  justify-content: space-around;
+}
+main #clients div article {
+  display: flex;
+  align-items: center;
+  width: 35%;
+  gap: 2em;
+}
+main #clients div article img {
+  height: 6em;
+  width: 6em;
+  object-fit: cover;
+}
+main #clients div article div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+main #clients div article div p {
+  line-height: 25px;
+  color: #87898f;
+  font-size: 1.2em;
+}
+main #clients div article div h5 {
+  color: #394b5e;
+  font-size: 1.4em;
+}
+main #partner {
+  padding: 10em 0;
+  display: flex;
+  justify-content: space-around;
+}
+main #partner img {
+  width: 10%;
+  height: auto;
+  filter: grayscale(100%);
 }
 
 /*# sourceMappingURL=style.css.map */
