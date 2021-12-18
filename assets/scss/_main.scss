@@ -379,7 +379,7 @@ main{
         img{
             width: 10%;
             height: auto;
-            filter: grayscale(100%);
+            filter: grayscale(100%) opacity(50%);
         }
     }
 }
