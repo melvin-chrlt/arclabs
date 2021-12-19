@@ -19,25 +19,65 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 header nav img {
   width: 150%;
   height: auto;
 }
-header nav #navBar {
+header nav .navBar {
   padding-right: 2em;
 }
-header nav #navBar ul {
+header nav .navBar ul {
   display: flex;
   gap: 5em;
 }
-header nav #navBar ul li a {
+header nav .navBar ul li a {
   color: white;
   font-weight: bold;
   font-size: 1.3em;
   transition: all ease-in-out 0.2s;
 }
-header nav #navBar ul li a:hover {
+header nav .navBar ul li a:hover {
+  color: #ca9e6c;
+}
+header nav #menuBurger {
+  width: 2.5em;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 1em;
+  border: white 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in-out all 0.2s;
+}
+header nav #menuBurger .bar {
+  border-radius: 5px;
+  height: 4px;
+  width: 35px;
+  background-color: white;
+  transition: ease-in-out all 0.2s;
+}
+header nav #menuBurger:hover {
+  border: #ca9e6c 2px solid;
+}
+header nav #menuBurger:hover .bar {
+  background-color: #ca9e6c;
+}
+header nav #close {
+  position: fixed;
+  top: 50px;
+  right: 150px;
+  display: none;
+  z-index: 99999;
+  color: white;
+  font-size: 3em;
+  transition: all ease-in-out 0.2s;
+}
+header nav #close:hover {
+  cursor: pointer;
   color: #ca9e6c;
 }
 header section {
@@ -476,6 +516,64 @@ footer #copyright div .fab, footer #copyright div .fas {
   padding: 1em;
   font-size: 1.3em;
   background-color: #334f6c;
+}
+
+@media screen and (max-width: 1250px) {
+  header {
+    padding: 0;
+  }
+  header nav {
+    background-color: #263a4e;
+    padding: 3em;
+  }
+  header nav .navBar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    animation: menu 1s;
+  }
+  header nav .navBar ul {
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+  }
+  header nav .navBar ul li {
+    transition: all ease-in-out 0.2s;
+    padding: 1.5em 0;
+    cursor: pointer;
+  }
+  header nav .navBar ul li a {
+    margin-left: 5em;
+    transition: all ease-in-out 0.2s;
+  }
+  header nav .navBar ul li:hover {
+    background-color: #ca9e6c;
+  }
+  header nav .navBar ul li:hover a {
+    color: #263a4e;
+  }
+  @keyframes menu {
+    from {
+      left: -200%;
+    }
+    to {
+      right: 100%;
+    }
+  }
+  header nav #menuBurger {
+    display: block;
+  }
+  header nav #menuBurger {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

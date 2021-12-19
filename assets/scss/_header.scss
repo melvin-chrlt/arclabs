@@ -7,14 +7,16 @@ header{
     nav{
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         img{
             width: 150%;
             height: auto;
         }
 
-        #navBar{
+        .navBar{
             padding-right: 2em;
+
             ul{
                 display: flex;
                 gap: 5em;
@@ -32,6 +34,51 @@ header{
                     }
                 }
             }
+        }
+
+        #menuBurger{
+            width: 2.5em;
+            display: none;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+            padding: 1em;
+            border: white 2px solid;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: ease-in-out all 0.2s;
+
+            .bar{
+                border-radius: 5px;
+                height: 4px;
+                width: 35px;
+                background-color: white;
+                transition: ease-in-out all 0.2s;
+            }
+        }
+
+        #menuBurger:hover{
+            border: #ca9e6c 2px solid;
+
+            .bar{
+                background-color: #ca9e6c;
+            }
+        }
+
+        #close{
+            position: fixed;
+            top: 50px;
+            right: 150px;
+            display: none;
+            z-index: 99999;
+            color: white;
+            font-size: 3em;
+            transition: all ease-in-out 0.2s;
+        }
+    
+        #close:hover{
+            cursor: pointer;
+            color: #ca9e6c;
         }
     }
 
