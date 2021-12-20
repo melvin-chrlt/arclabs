@@ -75,10 +75,22 @@ header nav #close {
   color: white;
   font-size: 3em;
   transition: all ease-in-out 0.2s;
+  animation: close 3s;
 }
 header nav #close:hover {
   cursor: pointer;
   color: #ca9e6c;
+}
+@keyframes close {
+  from {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 header section {
   padding-top: 10em;
@@ -87,6 +99,9 @@ header section {
 header section h1 {
   font-size: 10em;
   margin-bottom: 0.2em;
+}
+header section h1 span {
+  display: block;
 }
 header section .btn {
   color: white;
@@ -574,6 +589,48 @@ footer #copyright div .fab, footer #copyright div .fas {
   header nav #menuBurger {
     display: flex;
   }
+  header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3em;
+  }
+  header section h1 {
+    font-size: 6em;
+  }
+  header section .social {
+    padding-top: 12em;
+    padding-bottom: 4em;
+  }
+}
+main #cards {
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
+}
+main #cards article {
+  width: 100%;
+}
+main #cards article img {
+  width: 15%;
+}
+main #about {
+  padding: 0;
+}
+main #about div {
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 2em;
+}
+main #about div img {
+  width: 100%;
+}
+main #about div div {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /*# sourceMappingURL=style.css.map */

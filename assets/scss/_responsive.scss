@@ -64,6 +64,61 @@
                 display: flex;
             }
         }
+
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 3em;
+
+            h1{
+                font-size: 6em;
+            }
+
+            .social{
+                padding-top: 12em;
+                padding-bottom: 4em;
+            }
+        }
         
+    }
+}
+
+main{
+
+    #cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 5em;
+
+        article{
+            width: 100%;
+
+            img{
+                width: 15%;
+            }
+        }
+    }
+
+    #about{
+        padding: 0;
+
+        div{
+            flex-direction: column;
+            align-items: center;
+            padding: 2em 2em;
+
+            img{
+                width: 100%;
+            }
+
+            div{
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
     }
 }
